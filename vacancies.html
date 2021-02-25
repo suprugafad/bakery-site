@@ -4,24 +4,71 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Vacancies</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 <header class = "page-header">
     <a href="index.html"> <img class="header-img-main" src="img/tartine.png"> </a>
-    <a class = "header-link" href = "tel:+375555555555"> <img class="header-img" src = "img/tel.png"> Telephone </a>
-    <a class = "header-link" href = "mailto:tartine@gmail.com"> <img class="header-img" src="img/почта.png"> Mail </a>
-    <a class = "header-link" href = https://www.instagram.com/tartinebakery/?hl=en><img class="header-img" src="img/inst_brown.png">Instagram</a>
+    <div class = "header-links">
+        <a class = "header-link" href = "tel:+375555555555"> <img class="header-img" src = "img/tel.png"> Telephone </a>
+        <a class = "header-link" href = "mailto:tartine@gmail.com"> <img class="header-img" src="img/почта.png"> Mail </a>
+        <a class = "header-link" href = https://www.instagram.com/tartinebakery/?hl=en><img class="header-img" src="img/inst_brown.png">Instagram</a>
+    </div>
 </header>
-<nav> <a href="menu.html" class="header-link"> Menu </a> |
-    <a href = "aboutus.html" class="header-link"> About us </a> |
-    <a href = "covid.html" class="header-link"> Covid-19 </a> |
-    <a href = "vacancies.html" class="header-link"> Vacancies </a>
-</nav>
-<img class="img-background" src="img/вакансии.png">
-<p class = "text-vacancies" style = ">Vacancies</p>
-<p class = "text-vacancies">Tartine is a chain of bakeries and pastry shops in Minsk with French desserts, pastries and breads.
-    The philosophy of the bakery and pastry shop is simple - create and improve. Therefore, we are looking for passionate and
-    hardworking people for the team. Bread, desserts and baked goods are created by hand, therefore great attention is paid to the
-    selection and training of the masters. Thierry offers competitive pay, opportunities to learn and grow.</p>
+<main>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="menu.html">Menu</a></li>
+            <li><a class="menu__item" href="aboutus.html">About us</a></li>
+            <li><a class="menu__item" href="covid.html">Covid-19</a></li>
+            <li><a class="menu__item" href="vacancies.html">Vacancies</a></li>
+        </ul>
+    </div>
+    <nav><a href="menu.html" class="header-link"> Menu </a> |
+        <a href="aboutus.html" class="header-link"> About us </a> |
+        <a href="covid.html" class="header-link"> Covid-19 </a> |
+        <a href="vacancies.html" class="header-link current-page-list"> Vacancies </a>
+    </nav>
+    <img class="img-background" src="img/вакансии.png">
+    <p class="text-vacancies" style="font-weight: bold"> Vacancies </p>
+    <p class="text-vacancies">Tartine is a chain of bakeries and pastry shops in America with French desserts, pastries
+        and breads.
+        The philosophy of the bakery and pastry shop is simple - create and improve. Therefore, we are looking for
+        passionate and
+        hardworking people for the team. Bread, desserts and baked goods are created by hand, therefore great attention
+        is paid to the
+        selection and training of the masters. Thierry offers competitive pay, opportunities to learn and grow.</p>
+    <img class="img-worker" src="img/worker.png">
+    <p class="text-vacancies" style="font-weight: bold">Become part of our team!</p>
+    <p class="text-vacancies">Choose a suitable vacancy and call us. <br> Perhaps we are waiting for you!</p>
+    <div class="link-vacancies"><a class="site-vacancies" style=""
+                                   href="https://www.usajobs.gov/GetJob/ViewDetails/588151700">
+        <p class="text-vacancies-near-link">Link to a site with a current <br> list of vacancies:</p>
+        <img class="img-vacancies" src="img/usajobs.png"></a>
+    </div>
+    <footer>
+        <a href="index.html"><img src="img/tartine.png"></a>
+        <form>
+            <div class="contact-form">
+                <p>Contact us</p>
+                <hr>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <input class="text-input" type="text" placeholder="Text" required>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5549425.199733554!2d-82.81799110152664!3d41.59563386560826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6c47f436e20276b!2sTartine%20Bistro!5e0!3m2!1sru!2sby!4v1613815765639!5m2!1sru!2sby"
+                    width="42%" height="160" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+</main>
 </body>
 </html>
